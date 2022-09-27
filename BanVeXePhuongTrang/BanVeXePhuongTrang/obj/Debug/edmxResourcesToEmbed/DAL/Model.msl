@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QUANLYXEKHACHModelStoreContainer" CdmEntityContainer="QUANLYXEKHACHEntities">
+    <EntitySetMapping Name="tblBaoCaoDoanhThuChuyenDis">
+      <EntityTypeMapping TypeName="QUANLYXEKHACHModel.tblBaoCaoDoanhThuChuyenDi">
+        <MappingFragment StoreEntitySet="tblBaoCaoDoanhThuChuyenDi">
+          <ScalarProperty Name="MaChuyenDi" ColumnName="MaChuyenDi" />
+          <ScalarProperty Name="Thang" ColumnName="Thang" />
+          <ScalarProperty Name="Nam" ColumnName="Nam" />
+          <ScalarProperty Name="SoVe" ColumnName="SoVe" />
+          <ScalarProperty Name="DoanhThu" ColumnName="DoanhThu" />
+          <ScalarProperty Name="TiLe" ColumnName="TiLe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblBaoCaoDoanhThuNams">
+      <EntityTypeMapping TypeName="QUANLYXEKHACHModel.tblBaoCaoDoanhThuNam">
+        <MappingFragment StoreEntitySet="tblBaoCaoDoanhThuNam">
+          <ScalarProperty Name="Nam" ColumnName="Nam" />
+          <ScalarProperty Name="DoanhThu" ColumnName="DoanhThu" />
+          <ScalarProperty Name="TiLe" ColumnName="TiLe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblBaoCaoDoanhThuThangs">
+      <EntityTypeMapping TypeName="QUANLYXEKHACHModel.tblBaoCaoDoanhThuThang">
+        <MappingFragment StoreEntitySet="tblBaoCaoDoanhThuThang">
+          <ScalarProperty Name="Thang" ColumnName="Thang" />
+          <ScalarProperty Name="Nam" ColumnName="Nam" />
+          <ScalarProperty Name="SoChuyenDi" ColumnName="SoChuyenDi" />
+          <ScalarProperty Name="DoanhThu" ColumnName="DoanhThu" />
+          <ScalarProperty Name="TiLe" ColumnName="TiLe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblBenXes">
+      <EntityTypeMapping TypeName="QUANLYXEKHACHModel.tblBenXe">
+        <MappingFragment StoreEntitySet="tblBenXe">
+          <ScalarProperty Name="MaBenXe" ColumnName="MaBenXe" />
+          <ScalarProperty Name="TenBenXe" ColumnName="TenBenXe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblChiTietChuyenDis">
+      <EntityTypeMapping TypeName="QUANLYXEKHACHModel.tblChiTietChuyenDi">
+        <MappingFragment StoreEntitySet="tblChiTietChuyenDi">
+          <ScalarProperty Name="MaChuyenDi" ColumnName="MaChuyenDi" />
+          <ScalarProperty Name="MaBenXeTrungGiang" ColumnName="MaBenXeTrungGiang" />
+          <ScalarProperty Name="ThoiGianDung" ColumnName="ThoiGianDung" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblChiTietPhieuDatChoes">
+      <EntityTypeMapping TypeName="QUANLYXEKHACHModel.tblChiTietPhieuDatCho">
+        <MappingFragment StoreEntitySet="tblChiTietPhieuDatCho">
+          <ScalarProperty Name="MaCTPhieu" ColumnName="MaCTPhieu" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+          <ScalarProperty Name="MaChuyenDi" ColumnName="MaChuyenDi" />
+          <ScalarProperty Name="LayVe" ColumnName="LayVe" />
+          <ScalarProperty Name="ViTriGhe" ColumnName="ViTriGhe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblChiTietTrungChuyens">
+      <EntityTypeMapping TypeName="QUANLYXEKHACHModel.tblChiTietTrungChuyen">
+        <MappingFragment StoreEntitySet="tblChiTietTrungChuyen">
+          <ScalarProperty Name="MaXe" ColumnName="MaXe" />
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblChuyenDis">
+      <EntityTypeMapping TypeName="QUANLYXEKHACHModel.tblChuyenDi">
+        <MappingFragment StoreEntitySet="tblChuyenDi">
+          <ScalarProperty Name="MaChuyenDi" ColumnName="MaChuyenDi" />
+          <ScalarProperty Name="MaXe" ColumnName="MaXe" />
+          <ScalarProperty Name="KhoiHanh" ColumnName="KhoiHanh" />
+          <ScalarProperty Name="KetThuc" ColumnName="KetThuc" />
+          <ScalarProperty Name="DonGia" ColumnName="DonGia" />
+          <ScalarProperty Name="SoGheTrong" ColumnName="SoGheTrong" />
+          <ScalarProperty Name="SoGheDat" ColumnName="SoGheDat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLoaiNhanViens">
+      <EntityTypeMapping TypeName="QUANLYXEKHACHModel.tblLoaiNhanVien">
+        <MappingFragment StoreEntitySet="tblLoaiNhanVien">
+          <ScalarProperty Name="MaLoaiNhanVien" ColumnName="MaLoaiNhanVien" />
+          <ScalarProperty Name="TenLoaiNhanVien" ColumnName="TenLoaiNhanVien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLoaiXes">
+      <EntityTypeMapping TypeName="QUANLYXEKHACHModel.tblLoaiXe">
+        <MappingFragment StoreEntitySet="tblLoaiXe">
+          <ScalarProperty Name="MaLoaiXe" ColumnName="MaLoaiXe" />
+          <ScalarProperty Name="TenLoaiXe" ColumnName="TenLoaiXe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblNhanViens">
+      <EntityTypeMapping TypeName="QUANLYXEKHACHModel.tblNhanVien">
+        <MappingFragment StoreEntitySet="tblNhanVien">
+          <ScalarProperty Name="MaNhanVien" ColumnName="MaNhanVien" />
+          <ScalarProperty Name="TenNhanVien" ColumnName="TenNhanVien" />
+          <ScalarProperty Name="MaLoaiNhanVien" ColumnName="MaLoaiNhanVien" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="CMND" ColumnName="CMND" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPhanQuyens">
+      <EntityTypeMapping TypeName="QUANLYXEKHACHModel.tblPhanQuyen">
+        <MappingFragment StoreEntitySet="tblPhanQuyen">
+          <ScalarProperty Name="MaQuyen" ColumnName="MaQuyen" />
+          <ScalarProperty Name="TenQuyen" ColumnName="TenQuyen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPhieuDatChoes">
+      <EntityTypeMapping TypeName="QUANLYXEKHACHModel.tblPhieuDatCho">
+        <MappingFragment StoreEntitySet="tblPhieuDatCho">
+          <ScalarProperty Name="MaPhieu" ColumnName="MaPhieu" />
+          <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+          <ScalarProperty Name="DienThoai" ColumnName="DienThoai" />
+          <ScalarProperty Name="NgayDat" ColumnName="NgayDat" />
+          <ScalarProperty Name="TrungChuyen" ColumnName="TrungChuyen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTaiKhoans">
+      <EntityTypeMapping TypeName="QUANLYXEKHACHModel.tblTaiKhoan">
+        <MappingFragment StoreEntitySet="tblTaiKhoan">
+          <ScalarProperty Name="TenTaiKhoan" ColumnName="TenTaiKhoan" />
+          <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
+          <ScalarProperty Name="MaNhanVien" ColumnName="MaNhanVien" />
+          <ScalarProperty Name="MaQuyen" ColumnName="MaQuyen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTuyenXes">
+      <EntityTypeMapping TypeName="QUANLYXEKHACHModel.tblTuyenXe">
+        <MappingFragment StoreEntitySet="tblTuyenXe">
+          <ScalarProperty Name="MaTuyen" ColumnName="MaTuyen" />
+          <ScalarProperty Name="MaBenXeDi" ColumnName="MaBenXeDi" />
+          <ScalarProperty Name="MaBenXeDen" ColumnName="MaBenXeDen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblXeKhaches">
+      <EntityTypeMapping TypeName="QUANLYXEKHACHModel.tblXeKhach">
+        <MappingFragment StoreEntitySet="tblXeKhach">
+          <ScalarProperty Name="MaXe" ColumnName="MaXe" />
+          <ScalarProperty Name="MaTaiXe" ColumnName="MaTaiXe" />
+          <ScalarProperty Name="MaLoaiXe" ColumnName="MaLoaiXe" />
+          <ScalarProperty Name="BienSoXe" ColumnName="BienSoXe" />
+          <ScalarProperty Name="MaTuyen" ColumnName="MaTuyen" />
+          <ScalarProperty Name="SoGhe" ColumnName="SoGhe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblXeTrungChuyens">
+      <EntityTypeMapping TypeName="QUANLYXEKHACHModel.tblXeTrungChuyen">
+        <MappingFragment StoreEntitySet="tblXeTrungChuyen">
+          <ScalarProperty Name="MaXe" ColumnName="MaXe" />
+          <ScalarProperty Name="MaTaiXe" ColumnName="MaTaiXe" />
+          <ScalarProperty Name="MaLoaiXe" ColumnName="MaLoaiXe" />
+          <ScalarProperty Name="BienSoXe" ColumnName="BienSoXe" />
+          <ScalarProperty Name="DiaDiemTrungChuyen" ColumnName="DiaDiemTrungChuyen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
